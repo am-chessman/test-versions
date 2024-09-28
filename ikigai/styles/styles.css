@@ -402,14 +402,6 @@ right: -25px;
     scrollbar-width: none;
     margin-inline: auto;
     position: relative;
-    mask-image: linear-gradient(
-    to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1) 20%,
-        rgba(0, 0, 0, 1) 80%,
-        rgba(0, 0, 0, 0)
-    );
-    position: relative;
 }
 
 .slider-wrapper .image-list::-webkit-scrollbar {
@@ -419,19 +411,7 @@ display: none;
 width: 325px;
 height: 400px;
 object-fit: cover;
-/* animation: infinite-scroll 3s 1s infinite;
-position: absolute; */
 }
-
-/* @keyframes infinite-scroll {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-} */
 .container .slider-scrollbar {
 height: 24px;
 width: 100%;

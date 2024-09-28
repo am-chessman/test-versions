@@ -1,4 +1,33 @@
+"use client"
+import {useEffect} from 'react'
+
 export default function Menu() {
+
+    useEffect(() => {
+        const imageSliders = document.querySelectorAll(".slide") 
+        const btns = document.querySelectorAll(".btn")
+        let currentIndex = 0
+        let btnIndex = 0
+        const interval = setInterval(() => {
+            imageSliders.forEach((element) => {
+                element.classList.remove("active")
+            })
+
+            btns.forEach((btn) => {
+                btn.classList.remove("active")
+            })
+
+            btns[btnIndex].classList.add("active")
+            imageSliders[currentIndex].classList.add("active")
+
+            currentIndex = (currentIndex + 1 ) % imageSliders.length
+            btnIndex = (btnIndex + 1) % btns.length
+        }, 5000)
+        return () => {
+            clearInterval(interval)
+        }
+    }, [])    
+
     return (
         <>
             <header className="img-slider">
@@ -12,7 +41,7 @@ export default function Menu() {
                         </p>
                     </div>
                 </div>
-                <div className="slide">
+                <div className="slide" >
                     <img src="images/menuSLider.webp" alt="" />
                     <div className="info">
                         <h2>Poké Bowl – En Fräsch Favorit</h2>
@@ -22,7 +51,7 @@ export default function Menu() {
                         </p>
                     </div>
                 </div>
-                <div className="slide">
+                <div className="slide" >
                     <img src="images/menuSLider4.webp" alt="" />
                     <div className="info">
                         <h2>Nigiri – En Klassisk Favorit</h2>
@@ -33,7 +62,7 @@ export default function Menu() {
                     </div>
                 </div>
 
-                <div className="slide">
+                <div className="slide" >
                     <img src="images/menuSLider5.webp" alt="" />
                     <div className="info">
                         <h2>Sashimi – Ren och Äkta</h2>
@@ -44,7 +73,7 @@ export default function Menu() {
                     </div>
                 </div>
 
-                <div className="slide">
+                <div className="slide" >
                     <img src="images/menuSLider6.webp" alt="" />
                     <div className="info">
                         <h2>Uramaki – Inuti Utsökt</h2>

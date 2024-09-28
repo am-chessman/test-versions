@@ -30,11 +30,11 @@ export default function Footer() {
                         </div>
                         <div className="footer-col">
                             <h4>Följ Oss</h4>
-                            <div className="social-as">
+                            <div className="social-links">
                                 <a href="#"><i className="fab fa-facebook-f"></i></a>
                                 <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-instagram"></i></a>
-                                <a href="#"><i className="fab fa-aedin-in"></i></a>
+                                <a href="#"><i className="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
