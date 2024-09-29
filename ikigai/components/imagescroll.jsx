@@ -43,7 +43,7 @@ const Imagescroll = () => {
                     className="slide-button material-symbols-rounded"
                     onClick={handlePrevScroll}
                 >
-                    <i class="bi bi-arrow-left-circle-fill"></i>
+                    <i className="bi bi-arrow-left-circle-fill"></i>
                 </button>
                 <ul className="image-list">
                     <div className="image-list-content" 
@@ -85,7 +85,7 @@ const Imagescroll = () => {
                     className="slide-button material-symbols-rounded"
                     onClick={handleNextScroll}
                 >
-                    <i class="bi bi-arrow-right-circle-fill"></i>
+                    <i className="bi bi-arrow-right-circle-fill"></i>
                 </button>
             </div>
         </section>
