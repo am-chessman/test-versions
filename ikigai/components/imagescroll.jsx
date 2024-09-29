@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState } from 'react';
 import "@styles/styles.css";
+import "@styles/globals.css"
 import imageList from './imagemanager';
 
 const ImageItem = ({ imgSrc, id }) => {
@@ -42,7 +43,7 @@ const Imagescroll = () => {
                     className="slide-button material-symbols-rounded"
                     onClick={handlePrevScroll}
                 >
-                    chevron_left
+                    <i class="bi bi-arrow-left-circle-fill"></i>
                 </button>
                 <ul className="image-list">
                     <div className="image-list-content" 
@@ -75,7 +76,7 @@ const Imagescroll = () => {
                         }}
                     >                        
                         {imageList.map((element, index) => (
-                            <ImageItem imgSrc={element.src} id={element.id} />
+                            <ImageItem key={index} imgSrc={element.src} id={element.id} />
                         ))}
                     </div>
                 </ul>
@@ -84,7 +85,7 @@ const Imagescroll = () => {
                     className="slide-button material-symbols-rounded"
                     onClick={handleNextScroll}
                 >
-                    chevron_right
+                    <i class="bi bi-arrow-right-circle-fill"></i>
                 </button>
             </div>
         </section>

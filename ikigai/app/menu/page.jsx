@@ -1,5 +1,9 @@
 "use client"
 import {useEffect} from 'react'
+import "@styles/styles.css"
+import "@styles/nav.css"
+import "@styles/globals.css"
+import "@styles/footer.css"
 
 export default function Menu() {
 
@@ -93,8 +97,6 @@ export default function Menu() {
                 </div>
             </header>
             
-            <hr className="hr-1" />
-
             <section className="menu-section" id="menu-section">
                 <h2 className="menu-h2">Våra Menyer</h2>
                 <div className="menu-grid">
@@ -115,8 +117,6 @@ export default function Menu() {
                     </div>
                 </div>
             </section>
-
-            <hr className="hr-1" />
 
             <div className="ggl-maps">
                 <iframe

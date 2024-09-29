@@ -1,3 +1,8 @@
+import "@styles/styles.css"
+import "@styles/nav.css"
+import "@styles/globals.css"
+import "@styles/footer.css"
+
 export default function Contact() {
     return (
         <>
@@ -28,8 +33,6 @@ export default function Contact() {
                     </div>
                 </div>
             </header>
-
-            <hr className="hr-1" />
 
             <section className="odr-section">
                 <div className="odr-div menu">
@@ -67,8 +70,6 @@ export default function Contact() {
                     </div>
                 </div>
             </section>
-
-            <hr className="hr-1" />
 
             <div className="ggl-maps">
                 <iframe

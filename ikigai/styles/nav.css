@@ -1,0 +1,168 @@
+:root {
+    --nav-links-color: #f03e3e;
+    --header-text-color: #cbffcb;
+    --text-color: #fff;
+    --border-color: #cbffcb;
+}
+
+.btn-a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.hr-1 {
+    border: 1px solid var(--text-color);
+    height: 1px;
+    margin-top: 2rem;
+}
+
+.hr-2 {
+    border: 1px solid var(--border-color);
+    height: 1px;
+    margin-top: 2rem;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: inherit;
+}
+
+label.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--nav-links-color);
+    background-color: none;
+    transition: 400ms ease-in-out;
+    font-weight: bold;
+}
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.buy-now {
+    background: none;
+    color: var(--nav-links-color);
+    cursor: pointer;
+}
+
+.buy-now:hover {
+    color: #fff;
+    transition: 400ms ease-in-out;
+    border-radius: 5px;
+    padding: 8px 14px;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    .buy-now {
+        color: black;
+    }
+    .buy-now:hover {
+        color: #f03e3e;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav > ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #FDE9C9;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+
+    }
+    .buy-now {
+        color: black;
+    }
+    .buy-now:hover {
+        color: #f03e3e;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #f03e3e;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    nav .logo img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .buy-now {
+        color: black;
+    }
+
+    .buy-now:hover {
+        color: #f03e3e;
+    }
+
+    }
+    section {
+    /* background: url(bg1.webp) no-repeat; */
+        background-size: cover;
+        height: calc(100vh - 80px);
+    }

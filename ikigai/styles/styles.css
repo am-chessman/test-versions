@@ -1,286 +1,154 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 
-.btn-a {
-    text-decoration: none;
-    color: white;
-}
 
-.hr-1 {
-    border: 1px solid #fff;
-    height: 1px;
-    margin-top: 2rem;
-}
-
-.hr-2 {
-border: 1px solid #fff;
-height: 1px;
-margin-top: 2rem;
-}
-
-nav {
-background: #fff;
-height: 80px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 100%;
-}
-label.logo img {
-width: 100px;
-height: 100px;
-}
-nav ul {
-float: right;
-margin-right: 20px;
-}
-nav ul li {
-display: inline-block;
-line-height: 80px;
-margin: 0 5px;
-}
-nav ul li a {
-color: black;
-font-size: 17px;
-padding: 8px 14px;
-border-radius: 5px;
-text-decoration: none;
-}
-
-nav a:hover {
-background-color: #f03e3e;
-color: white;
-transition: 400ms ease-in-out;
-}
-.checkbtn {
-font-size: 30px;
-color: black;
-float: right;
-line-height: 80px;
-margin-right: 40px;
-cursor: pointer;
-display: none;
-}
-
-.buy-now {
-background: none;
-color: #f03e3e;
-cursor: pointer;
-}
-.buy-now:hover {
-color: #fff;
-transition: 400ms ease-in-out;
-border-radius: 5px;
-padding: 8px 14px;
-}
-
-#check {
-display: none;
-}
-@media (max-width: 952px) {
-label.logo {
-    font-size: 30px;
-    padding-left: 20px;
-}
-nav ul li a {
-    font-size: 16px;
-}
-.buy-now {
-    color: black;
-}
-.buy-now:hover {
-    color: #f03e3e;
-}
-}
-@media (max-width: 858px) {
-.checkbtn {
-    display: block;
-}
-
-nav > ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #fff;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-}
-.buy-now {
-    color: black;
-}
-.buy-now:hover {
-    color: #f03e3e;
-}
-
-nav ul li {
-    display: block;
-    margin: 25px 0;
-    line-height: 30px;
-}
-nav ul li a {
-    font-size: 20px;
-}
-a:hover,
-a.active {
-    background: none;
-    color: #f03e3e;
-}
-#check:checked ~ ul {
-    left: 0;
-}
-}
-
-@media (max-width: 500px) {
-nav .logo img {
-    height: 75px;
-    width: 75px;
-}
-.buy-now {
-    color: black;
-}
-.buy-now:hover {
-    color: #f03e3e;
-}
-}
-section {
-/* background: url(bg1.webp) no-repeat; */
-background-size: cover;
-height: calc(100vh - 80px);
-}
 
 /* -----------HEADER------------ */
 
 .header {
-display: flex;
-justify-content: space-evenly;
-margin-top: 3rem;
-align-items: center;
-padding: 3rem;
-position: relative;
-margin-bottom: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: 3rem; */
+    align-items: center;
+    padding: 3rem;
+    position: relative;
+    margin-bottom: 7rem;
+    background-image: url("https://as2.ftcdn.net/v2/jpg/02/02/70/71/1000_F_202707153_EuS0MPlxb0BxIlw75tNnK5QvNTmSEZ9I.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hdr-content,
 .mdrn-content {
-display: flex;
-flex-direction: column;
-width: 40vw;
-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    gap: 2rem;
 }
 
 .header-h2 {
-font-size: 4rem;
-color: white;
-line-height: 5rem;
-}
-
-.header-red {
-color: red;
+    font-size: 4rem;
+    color: #cbffcb;
+    line-height: 5rem;
 }
 
 .header-p,
 .mdrn-p {
-color: white;
-font-size: 1.3rem;
-font-style: italic;
+    color: #fff;
+    font-size: 1.3rem;
+    /* font-style: italic; */
+}
+
+.mdrn-p {
+    color: #000;
+    font-size: 1.3rem;
+    /* font-style: italic; */
 }
 
 .header-btns,
 .mdrn-btns {
-display: flex;
-gap: 3rem;
-justify-content: baseline;
+    display: flex;
+    gap: 3rem;
+    justify-content: baseline;
 }
 
 .header-btn,
 .mdrn-btn {
-background: none;
-color: white;
-border: 2px solid #fff;
-border-radius: 0.5rem;
-padding: 12px 36px;
-font-size: 1.2rem;
-cursor: pointer;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    background: none;
+    color: white;
+    border: 2px solid #fff;
+    /* border-radius: 0.5rem; */
+    padding: 5px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.mdrn-btn {
+    color: #000;
+    border: solid #000;
 }
 
 .hdr-a {
-text-decoration: none;
-color: white;
-font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
 }
 
 .header-btn2,
 .mdrn-btn2,
 .testimonial-box button {
-background: red;
-color: white;
-border-radius: 0.5rem;
-padding: 12px 36px;
-font-size: 1.2rem;
-border: 2px solid red;
-cursor: pointer;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    background: #cbffcb;
+    color: #000;
+    /* border-radius: 0.5rem; */
+    padding: 5px 30px;
+    font-size: 1.2rem;
+    border: 2px solid #cbffcb;
+    cursor: pointer;
 }
 
 .header-h3 {
-color: white;
-font-style: italic;
-font-size: 20px;
+    color: white;
+    /* font-style: italic; */
+    font-size: 20px;
 }
 
-.header-btn2:hover,
+.header-btn2:hover {
+    background: none;
+    color: white;
+    border: 2px solid #fff;
+    /* border-radius: 0.5rem; */
+    padding: 5px 30px;
+    font-size: 1.2rem;
+    transition: 400ms all ease-in-out;
+}
+
 .mdrn-btn2:hover {
-background: none;
-color: white;
-border: 2px solid #fff;
-border-radius: 0.5rem;
-padding: 12px 36px;
-font-size: 1.2rem;
-transition: 400ms all ease-in-out;
+    background: none;
+    color: #000;
+    border: 2px solid #000;
+    /* border-radius: 0.5rem; */
+    padding: 5px 30px;
+    font-size: 1.2rem;
+    transition: 400ms all ease-in-out;
 }
 
 .header-btn:hover,
 .mdrn-btn:hover {
-background: red;
-color: white;
-border-radius: 0.5rem;
-padding: 12px 36px;
-font-size: 1.2rem;
-transition: 400ms all ease-in-out;
-border: none;
+    background-color: #cbffcb;
+    color: #000;
+    /* border-radius: 0.5rem; */
+    /* padding: 12px 36px; */
+    font-size: 1.2rem;
+    transition: 400ms all ease-in-out;
+    border: none;
+    border: 2px solid #cbffcb    ;
 }
 
 .header-btn2 > a,
 .header-btn > a {
-text-decoration: none;
-color: white;
-}
-
-.hdr-img > img {
-width: 30rem;
-height: 20rem;
-border: solid 3px #fff;
-margin-top: 7rem;
+    text-decoration: none;
+    color: white;
 }
 
 nav {
-position: fixed; /* Fixed position to keep it at the top */
-top: 0; /* Position it at the top */
-left: 0;
-width: 100%; /* Occupy full width of the viewport */
-z-index: 1000; /* Ensure it's above other elements */
-background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    position: fixed; /* Fixed position to keep it at the top */
+    top: 0; /* Position it at the top */
+    left: 0;
+    width: 100%; /* Occupy full width of the viewport */
+    z-index: 1000; /* Ensure it's above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
 }
 
 /* Adjustments for other elements */
 body {
-margin-top: 80px; /* Ensure content doesn't go under the fixed navbar */
+    margin-top: 80px; /* Ensure content doesn't go under the fixed navbar */
 }
 
 .odr-img img {
-width: 550px;
-height: 550px;
+    width: 550px;
+    height: 550px;
 }
 
 /* ---------------------HEADER RESPONSIVE------------ */
@@ -368,21 +236,18 @@ position: absolute;
 top: 50%;
 outline: none;
 border: none;
-height: 50px;
-width: 50px;
+background: none;
 z-index: 5;
-color: #fff;
+color: #000;
 display: flex;
 cursor: pointer;
 font-size: 2.2rem;
-background: #000;
 align-items: center;
 justify-content: center;
-border-radius: 50%;
 transform: translateY(-50%);
 }
 .slider-wrapper .slide-button:hover {
-background: #404040;
+color: #404040;
 }
 .slider-wrapper .slide-button#prev-slide {
 left: -25px;
@@ -397,7 +262,7 @@ right: -25px;
     font-size: 0;
     list-style: none;
     margin-bottom: 30px;
-    overflow-x: hidden;
+    overflow-x: auto;
     scrollbar-width: none;
     margin-inline: auto;
     position: relative;
@@ -405,16 +270,18 @@ right: -25px;
     transition: all 1.5s ease;
 }
 
-.slider-wrapper .image-list::-webkit-scrollbar {
+.slider-wrapper .image-list .image-list-content::-webkit-scrollbar {
 display: none;
 }
 .slider-wrapper .image-list .image-list-content .image-item {
-width: 325px;
-height: 400px;
+width: 200px;
+height: 300px;
 object-fit: cover;
+border-radius: 20px;
 transition-property: all;
 transition-duration: 1.5s;
 transition-delay: 0.5s;
+
 }
 .container .slider-scrollbar {
 height: 24px;
@@ -458,35 +325,38 @@ top: -10px;
 bottom: -10px;
 }
 .container h2 {
-color: white;
+color: #000;
 text-align: center;
 font-size: 40px;
 margin: 40px;
 font-weight: 600;
+font-family: inherit;
+text-transform: capitalize;
 }
 
 /* Styles for mobile and tablets */
 @media only screen and (max-width: 1023px) {
-.slider-wrapper .slide-button {
-    display: none !important;
+    /* .slider-wrapper .slide-button {
+        display: none !important;
+    } */
+    .slider-wrapper .image-list {
+        gap: 10px;
+        margin-bottom: 15px;
+        /* scroll-snap-type: x mandatory; */
+    }
+    .slider-wrapper .image-list .image-item {
+        width: 380px;
+        height: 480px;
+    }
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
 }
-.slider-wrapper .image-list {
-    gap: 10px;
-    margin-bottom: 15px;
-    scroll-snap-type: x mandatory;
-}
-.slider-wrapper .image-list .image-item {
-    width: 380px;
-    height: 480px;
-}
-.slider-scrollbar .scrollbar-thumb {
-    width: 20%;
-}
-}
+
 @media screen and (max-width: 410px) {
-.container h2 {
-    font-size: 26px;
-}
+    .container h2 {
+        font-size: 26px;
+    }
 }
 /*------------------------- Modern Food ---------------------*/
 .modern-food {
@@ -500,7 +370,7 @@ justify-content: space-evenly;
 .mdrn-h2 {
 font-size: 2.6rem;
 font-weight: 700;
-color: #fff;
+color: #000;
 }
 
 .mdrn-img1 {
@@ -628,9 +498,10 @@ color: #3f51b5;
 
 .testimonialH2 {
 margin: 30px auto;
-color: white;
+color: #000;
 font-size: 32px;
 text-align: center;
+font-family: "Edu AU VIC WA NT Guides", cursive;
 }
 
 .outerdiv {
@@ -647,37 +518,48 @@ grid-template-rows: repeat(2, 15rem);
 grid-template-columns: repeat(4, 17rem);
 }
 .eachdiv {
-padding: 1rem 2rem;
-border-radius: 0.8rem;
-box-shadow: 5px 5px 20px #6d6b6b6b;
-color: white;
+    background: #fff;
+    color: #000;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px #b6b6b66b;
+    color: white;
+
+    .review {
+        h4, p {
+            color: #4b5258;
+        }
+
+        p {
+            font-size: 1.05rem;
+        }
+    }
 }
 .div1 {
-background: #733fc8;
-grid-column: 1/3;
-grid-row: 1/2;
-background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
-background-repeat: no-repeat;
-background-position-x: 25rem;
+    background: #fff;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 25rem -.1rem;
 }
 .div2 {
-background: #49556b;
+background: #fff;
 grid-column: 3/4;
 grid-row: 1/2;
 }
 .div3 {
-background: white;
+background: #fff;
 grid-column: 4/5;
 grid-row: 1/3;
-color: black;
 }
 .div4 {
-background: rgb(0, 0, 0);
+background: #fff;
 grid-column: 1/2;
 grid-row: 2/3;
 }
 .div5 {
-background: #18202d;
+background: #fff;
 grid-column: 2/4;
 grid-row: 2/3;
 }
@@ -706,13 +588,13 @@ font-size: 0.9rem;
 margin-bottom: 0.1rem;
 font-weight: 600;
 }
-.detbox .name.dark {
+/* .detbox .name.dark {
 color: #49505a;
-}
+} */
 
 .review h4 {
 font-size: 1.4rem;
-color: #f3deff;
+/* color: #f3deff; */
 font-weight: 600;
 line-height: 1.5;
 margin-bottom: 0.8rem;
@@ -757,108 +639,6 @@ color: #0e0e0e;
 }
 }
 
-/* -------------footer------------ */
-.ggl-maps {
-display: flex;
-width: 100%;
-height: 100vh;
-justify-content: center;
-align-items: center;
-}
-
-iframe {
-width: 80%;
-height: 500px;
-}
-
-footer .container {
-max-width: 1170px;
-margin: auto;
-}
-.row {
-display: flex;
-flex-wrap: wrap;
-}
-ul {
-list-style: none;
-}
-.footer {
-background-color: #24262b;
-padding: 70px 0;
-}
-.footer-col {
-width: 25%;
-padding: 0 15px;
-}
-.footer-col h4 {
-font-size: 18px;
-color: #ffffff;
-text-transform: capitalize;
-margin-bottom: 35px;
-font-weight: 500;
-position: relative;
-}
-.footer-col h4::before {
-content: "";
-position: absolute;
-left: 0;
-bottom: -10px;
-background-color: #e91e63;
-height: 2px;
-box-sizing: border-box;
-width: 50px;
-}
-.footer-col ul li:not(:last-child) {
-margin-bottom: 10px;
-}
-.footer-col ul li a,
-.menu a,
-.contact a {
-font-size: 16px;
-text-transform: capitalize;
-color: #ffffff;
-text-decoration: none;
-font-weight: 300;
-color: #bbbbbb;
-display: block;
-transition: all 0.3s ease;
-}
-.footer-col ul li a:hover,
-.menu a:hover,
-.contact a:hover {
-color: #ffffff;
-padding-left: 8px;
-}
-.footer-col .social-links a {
-display: inline-block;
-height: 40px;
-width: 40px;
-background-color: rgba(255, 255, 255, 0.2);
-margin: 0 10px 10px 0;
-text-align: center;
-line-height: 40px;
-border-radius: 50%;
-color: #ffffff;
-transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover {
-color: #24262b;
-background-color: #ffffff;
-}
-
-/*responsive*/
-
-@media (max-width: 767px) {
-.footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media (max-width: 574px) {
-.footer-col {
-    width: 100%;
-}
-}
 
 /* -----------------OdrSection----------------- */
 .odr-section {
@@ -968,19 +748,19 @@ border-radius: 5px;
 }
 
 .img-slider .slide .info {
-position: absolute;
-bottom: 50px;
-left: 50px;
-padding: 20px 30px;
-background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.8),
-    rgba(255, 8, 8, 0.3)
-);
-border-radius: 8px;
-color: #fff;
-max-width: 35%;
-animation: fadeIn 1.5s ease-out forwards;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    padding: 20px 30px;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8),
+        rgba(255, 8, 8, 0.3)
+    );
+    border-radius: 8px;
+    color: #fff;
+    max-width: 35%;
+    animation: fadeIn 1.5s ease-out forwards;
 }
 
 .img-slider .slide .info h2 {
@@ -993,10 +773,10 @@ text-transform: uppercase;
 }
 
 .img-slider .slide .info p {
-color: #ddd;
-font-size: 18px;
-line-height: 1.6;
-width: 100%;
+    color: #ddd;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    width: 100%;
 }
 
 @keyframes fadeIn {
@@ -1127,7 +907,7 @@ height: auto;
 .menu-section h2 {
 margin-bottom: 20px;
 font-size: 42px;
-color: white;
+color: #000;
 padding: 10px;
 }
 

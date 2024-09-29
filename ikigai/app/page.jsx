@@ -1,6 +1,8 @@
 import React from 'react'
-import "@styles/styles.css"
+// import "@styles/styles.css"
+import "@styles/nav.css"
 import "@styles/globals.css"
+import "@styles/footer.css"
 import Imagescroll from '@components/imagescroll'
 
 const Home = () => {
@@ -13,9 +15,9 @@ return (
             <span className="header-red">Sushi</span>
             </h2>
             <p className="header-p">
-            Njut av vårt sortiment av färsk, hälsosam och smakfull sushi,
-            tillverkad med omsorg och kvalitetsingredienser. Upplev en smakrik
-            resa med varje tugga!
+                Njut av vårt sortiment av färsk, hälsosam och smakfull sushi,
+                tillverkad med omsorg och kvalitetsingredienser. Upplev en smakrik
+                resa med varje tugga!
             </p>
             <div className="header-btns">
                 <a href="https://www.foodora.se/en/restaurant/zbmp/ikigai-sushi" target="_blank">
@@ -27,26 +29,20 @@ return (
                 </a>
             </div>
         </div>
-        <div className="hdr-img">
-            <img src="images/headerimg.webp" alt="sushi-with chopsticks" />
-        </div>
+        
     </header>
 
-    <hr className="hr-1" />
-
     <Imagescroll />
-
-    <hr className="hr-2" />
 
     <section className="modern-food">
         <div className="mdrn-content">
             <h2 className="mdrn-h2">
-            Unna Dig med <span className="header-red"> Fräsch</span> Sushi
-            <span className="header-red">Upplevelse</span>
+                Unna Dig med <span className="header-red"> Fräsch</span> Sushi
+                <span className="header-red">Upplevelse</span>
             </h2>
             <p className="mdrn-p">
-            Upplev vår färska, hälsosamma och smakfulla sushi. Utforska en
-            kulinarisk resa med varje tugga!
+                Upplev vår färska, hälsosamma och smakfulla sushi. Utforska en
+                kulinarisk resa med varje tugga!
             </p>
 
             <div className="mdrn-btns">
@@ -62,7 +58,6 @@ return (
         </div>
     </section>
 
-    <hr className="hr-1" />
     <section className="testimonial-box">
         <h2 className="testimonialH2">Kundrecensioner från våra sushiälskande gäster</h2>
         <div className="outerdiv">
@@ -171,7 +166,6 @@ return (
             </div>
         </div>
     </section>
-    <hr className="hr-2" />
 
     <div className="ggl-maps">
         <iframe

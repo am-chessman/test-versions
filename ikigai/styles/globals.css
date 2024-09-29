@@ -1,12 +1,11 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FDE9C9;
+  --text-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #FDE9C9;
   }
 }
 
@@ -19,9 +18,10 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Edu AU VIC WA NT Guides", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
 }
 
 * {
