@@ -3,6 +3,7 @@
     --header-text-color: #cbffcb;
     --text-color: #fff;
     --border-color: #cbffcb;
+    --body-bg-color: #FDE9C9;
 }
 
 .btn-a {
@@ -29,9 +30,30 @@ nav {
     justify-content: space-between;
     width: 100%;
     font-family: inherit;
+    background-color: var(--body-bg-color);
+}
+
+nav::before {
+    content: "";
+    height: 5px;
+    width: 100vw;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    scale: 0 1;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+    transform-origin: left;
+}
+
+@keyframes scroll-watcher {
+    to {
+        scale: 1 1;
+    }
 }
 
 label.logo img {
+    margin-top: 10px;
     width: 100px;
     height: 100px;
 }
@@ -91,7 +113,7 @@ nav a:hover {
 
 @media (max-width: 952px) {
     label.logo {
-        font-size: 30px;
+        /* font-size: 30px; */
         padding-left: 20px;
     }
     nav ul li a {

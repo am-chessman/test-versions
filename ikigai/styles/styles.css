@@ -274,15 +274,26 @@ right: -25px;
 display: none;
 }
 .slider-wrapper .image-list .image-list-content .image-item {
-width: 200px;
-height: 300px;
-object-fit: cover;
-border-radius: 20px;
-transition-property: all;
-transition-duration: 1.5s;
-transition-delay: 0.5s;
-
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-delay: 0.5s;
+    animation: appear 1.8s linear;
 }
+
+@keyframes appear {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
 .container .slider-scrollbar {
 height: 24px;
 width: 100%;
