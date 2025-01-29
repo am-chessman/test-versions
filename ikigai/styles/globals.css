@@ -18,7 +18,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Edu AU VIC WA NT Guides", cursive;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-color);
